@@ -23,32 +23,32 @@
 <!--    <input type="submit" value="Update Pet">-->
 <!--  </form> -->
 
-<!--<form action="/pets/<%= @pet.id %>" method="POST">-->
-<!--  <input id="hidden" type="hidden" name="_method" value="patch">-->
-<!--  <label>Name: </label>-->
+<form action="/pets/<%= @pet.id %>" method="POST">
+  <input id="hidden" type="hidden" name="_method" value="patch">
+  <label>Name: </label>
   
-<!--  <br></br>-->
+  <br></br>
   
-<!--  <input type="text" name="pet[name]" id="pet_name" value="<%= @pet.name %>">-->
+  <input type="text" name="pet[name]" id="pet_name" value="<%= @pet.name %>">
   
-<!--  <br></br>-->
+  <br></br>
   
-<!--  <label>Choose Existing Owner: </label>-->
-<!--  <br></br>-->
+  <label>Choose Existing Owner: </label>
+  <br></br>
   
-<!--  <% @owner.each do |owner| %>-->
-<!--    <input type="radio" name="pet[owner_id]" value="<%= owner.id %>" id="<%= owner.id %>" <%= 'checked' if @pet.owner == owner %>> <%= owner.name %></input>-->
-<!--    <% end %>-->
-<!--    <br></br>-->
+  <% @owner.each do |owner| %>
+    <input type="radio" name="pet[owner_id]" value="<%= owner.id %>" id="<%= owner.id %>" <%= 'checked' if @pet.owner == owner %>> <%= owner.name %></input>
+    <% end %>
+    <br></br>
     
-<!--    <label>and/or create new owner: </label>-->
-<!--    <br></br>-->
-<!--    <label>Name: </label>-->
-<!--    <input type="text" name="owner[name]" id="owner_name"></input>-->
-<!--    <br></br>-->
+    <label>and/or create new owner: </label>
+    <br></br>
+    <label>Name: </label>
+    <input type="text" name="owner[name]" id="owner_name"></input>
+    <br></br>
     
-<!--    <input type="submit" value="Update Pet">-->
+    <input type="submit" value="Update Pet">
   
-<!--</form>-->
+</form>
 
 
